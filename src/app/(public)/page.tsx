@@ -12,7 +12,7 @@ export default async function Postspage(
     const resolvedSearchParams = await searchParams
     const query = resolvedSearchParams.search || ''
 
-    //検索されたものを表示()
+    //検索されたものを表示
     const posts = query
     ? await searchPosts(query) as Post[]
     : await getPosts() as Post[]
