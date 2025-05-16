@@ -27,12 +27,14 @@ async function main(){
                         title: '初めてのプログ投稿',
                         content: 'これは最初のブログ投稿です。',
                         topImage: dummyImages[0],
-                        published: true
+                        published: true,
+                        createdAt: new Date()
                     },{
                         title: '2番目ののプログ投稿',
                         content: 'これは2つ目のブログ投稿です。',
                         topImage: dummyImages[1],
-                        published: true
+                        published: true,
+                        createdAt: new Date()
                     }
                 ]
             }
