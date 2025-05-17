@@ -7,7 +7,6 @@ import {
         NavigationMenuLink,
         NavigationMenuList,
 } from "@/components/ui/navigation-menu"
-import { imageConfigDefault } from "next/dist/shared/lib/image-config"
 
 export default function PublicHeader() {
   return (
