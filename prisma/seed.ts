@@ -7,7 +7,7 @@ async function main(){
     await prisma.user.deleteMany()
 
     //暗号化
-    const hashedPassword = await bcrypt.hash('passwprd123',12)   
+    const hashedPassword = await bcrypt.hash('password123',12)   
 
     //ダミー画像
     const dummyImages = [
