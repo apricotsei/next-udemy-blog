@@ -1,4 +1,3 @@
-import { saveImage } from '@/utils/image';
 import { writeFile,mkdir } from 'fs/promises'
 import path from 'path'
 import { existsSync } from 'fs'
