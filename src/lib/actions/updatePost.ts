@@ -1,7 +1,6 @@
 'use server'
 import { postSchema } from "@/validations/post"
 import { saveImage } from "@/utils/image"
-import { redirect } from "next/navigation"
 import { prisma } from '@/lib/prisma'
 
 type ActionState = {
@@ -58,12 +57,12 @@ export async function updatePost(
             }
         })
 
-        redirect('/dashboard')
+        //redirect('/dashboard')
         
-        // return{
-        //     success: true,
-        //     errors: {}
-        // }
+        return{
+            success: true,
+            errors: {}
+        }
 
     }catch(err){
         console.log("createPost エラー:", err)

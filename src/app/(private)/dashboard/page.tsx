@@ -13,7 +13,7 @@ export default async function DashBoardPage() {
     }
 
     const posts = await getOwnPosts(userId);
-    console.log("取得した投稿",posts);
+    //console.log("取得した投稿",posts);
     return (
             <div className="p-4">
                 <div className="flex justify-between">
