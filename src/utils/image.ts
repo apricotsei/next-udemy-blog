@@ -4,7 +4,7 @@ import { existsSync } from 'fs'
 import { supabase } from '@/lib/supabase'
 
 export async function saveImage(file: File): Promise<string | null>{
-    const useSupabase = process.env.NEXT_PUBLIC_USE_SUPABASE_STRAGE === 'true';
+    const useSupabase = process.env.NEXT_PUBLIC_USE_SUPABASE_STORAGE === 'true';
 
     if(useSupabase){
         return await saveImageToSupabase(file);
